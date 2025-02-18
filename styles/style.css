@@ -190,6 +190,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
