@@ -300,10 +300,6 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
   background-color: #545050;
 }
 
-.content__card-link:focus {
-  outline: 1px solid #fff;
-}
-
 .content__list-item .content__card-link {
   text-decoration: none;
   color: #fff;
@@ -312,4 +308,18 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
 .content__list-item .content__card-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.content__card-link_current .content__video-card {
+  background-color: #545050;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__list-item:has(:focus-visible) {
+  appearance: none;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
